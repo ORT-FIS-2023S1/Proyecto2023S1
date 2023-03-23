@@ -1,5 +1,5 @@
-import { Pais } from "./domain/pais.js";
-import { ListaPaises } from "./domain/listapaises.js";
+import { Pais } from "../domain/pais.js";
+import { ListaPaises } from "../domain/listapaises.js";
 
 const btnGuardar = document.getElementById('btn_guardar');
 const inpNombre = document.getElementById('inp_nombre');
