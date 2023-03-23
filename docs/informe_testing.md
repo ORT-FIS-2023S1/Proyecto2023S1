@@ -1,12 +1,10 @@
 # Informe de testing 
-
 Proyecto asignado: <Proyecto>
 
-TODO: El informe debe incluir todas las secciones descritas en la letra para esta entrega.
+## Test de sistema
 
-## Sección ...
+## Reporte de issues
 
-## Sección ...
+## Informe de calidad del sistema
 
-## Sección ...
-
+## Reflexión

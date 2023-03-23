@@ -1,9 +1,11 @@
 # Informe entrega 2
 
-TODO: El informe debe incluir todas las secciones descritas en la letra para esta entrega.
+## Construcción
 
-## Sección ...
+## Interfaz de usuario
 
-## Sección ...
+## Codificación
 
-## Sección ...
+## Test unitario
+
+## Reflexión

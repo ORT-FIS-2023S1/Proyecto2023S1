@@ -1,9 +1,11 @@
 # Informe entrega 1
+## Repositorio Git
 
-TODO: El informe debe incluir todas las secciones descritas en la letra para esta entrega.
+##  Versionado
 
-## Sección ...
+## Elicitación
 
-## Sección ...
+## Especificación
 
-## Sección ...
+## Validación y verificación
+## Reflexión
