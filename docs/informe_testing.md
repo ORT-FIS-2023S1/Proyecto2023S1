@@ -1,5 +1,5 @@
 # Informe de testing 
-Proyecto asignado: <Proyecto>
+Proyecto asignado: [link]
 
 ## Test de sistema
 
