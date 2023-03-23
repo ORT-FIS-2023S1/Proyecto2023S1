@@ -11,7 +11,7 @@ export class Pais {
     return this.#nombre;
   }
 
-  setCapital(capital) {
+  setCapital(aCapital) {
     this.#capital = aCapital
   }
 

@@ -1,4 +1,4 @@
-export default class ListaPaises {
+export class ListaPaises {
 
   #paises;
 
