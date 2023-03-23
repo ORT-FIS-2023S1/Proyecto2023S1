@@ -1,4 +1,4 @@
-export class Pais {
+export class Country {
 
   #nombre;
   #capital;

@@ -1,34 +1,34 @@
-import { Pais } from "../domain/pais.js";
-import { ListaPaises } from "../domain/listapaises.js";
+import { Country } from "../domain/country.js";
+import { CountryList } from "../domain/countrylist.js";
 
-const btnGuardar = document.getElementById('btn_guardar');
-const inpNombre = document.getElementById('inp_nombre');
+const btnAdd = document.getElementById('btn_add');
+const inpName = document.getElementById('inp_name');
 const inpCapital = document.getElementById('inp_capital');
 
-const listaPaises = new ListaPaises();
+const mainCountryList = new CountryList();
 
-btnGuardar.addEventListener('click', () => {
-  const nuevoPais = new Pais(inpNombre.value);
-  nuevoPais.setCapital(inpCapital.value);
-  listaPaises.agregar(nuevoPais);
-  cargarListaPaises();
-  console.log(nuevoPais.presentar());
+btnAdd.addEventListener('click', () => {
+  const newCountry = new Country(inpName.value);
+  newCountry.setCapital(inpCapital.value);
+  mainCountryList.add(newCountry);
+  console.log(newCountry.presentar());
+  loadCountryList();
 } );
 
-function cargarListaPaises(){
-  const paises = listaPaises.getPaises();
-  let secpaises = document.getElementById('secpaises');
+function loadCountryList(){
+  const countries = mainCountryList.getCountries();
+  let seccountries = document.getElementById('seccountries');
   
-  for(let i = 0; i < paises.length; i++) {
-    let pais = paises[i];
+  for(let i = 0; i < countries.length; i++) {
+    let country = countries[i];
 
-    let infopais = document.createElement("div")
-    infopais.className = "infopais";
-    infopais.innerHTML = pais.presentar();
-    secpaises.appendChild(infopais);
+    let infocountry = document.createElement("div")
+    infocountry.className = "infocountry";
+    infocountry.innerHTML = country.presentar();
+    seccountries.appendChild(infocountry);
 
     let saltoLinea = document.createElement('br');
-    secpaises.appendChild(saltoLinea);
+    seccountries.appendChild(saltoLinea);
 
   }
 }
