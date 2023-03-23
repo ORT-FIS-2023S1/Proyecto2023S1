@@ -7,12 +7,16 @@ export class Pais {
     this.#nombre = aNombre;
   }
 
+  getNombre() {
+    return this.#nombre;
+  }
+
   setCapital(capital) {
     this.#capital = aCapital
   }
 
   presentar() {
-    console.log(`País: ${this.#nombre} capital: ${this.#capital}`);
+    return `País: ${this.#nombre} - capital: ${this.#capital}`;
   }
 
 }
