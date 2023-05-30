@@ -1,8 +1,6 @@
 export class Country {
-
   #nombre;
   #capital;
-
   constructor(aNombre) {
     this.#nombre = aNombre;
   }
@@ -12,11 +10,10 @@ export class Country {
   }
 
   setCapital(aCapital) {
-    this.#capital = aCapital
+    this.#capital = aCapital;
   }
 
-  presentar() {
+  toString() {
     return `País: ${this.#nombre} - capital: ${this.#capital}`;
   }
-
 }
